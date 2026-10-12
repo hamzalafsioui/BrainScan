@@ -47,4 +47,24 @@ def clean_dataset(data_path):
     return deleted_count
 
 
+def get_classes(data_path):
+    classes = [d for d in os.listdir(data_path) if os.path.isdir(os.path.join(data_path,d))]
+
+    return sorted(classes)
+
+def print_dataset_info(data_path):
+    print("="*20)
+    print("DATASET INFO")
+    print("="*20)
+
+    classes = get_classes(data_path)
+
+    for class_name in classes:
+        class_path = os.path.join(data_path,class_name)
+        images_files = [f for f in os.listdir(class_path) if is_valid_image(f)]
+
+        print(f"class: {class_name} | {len(images_files)}")
+
+
+
     
