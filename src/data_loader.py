@@ -55,7 +55,7 @@ class DataLoader:
     
     def to_numpy_arrays(self, images, labels):
         
-        X = np.array(images, dtype=np.float32)
+        X = np.array(images, dtype=np.uint8)
         y = np.array(labels, dtype=np.int32)
         
         print(f"\nNumpy arrays created:")
