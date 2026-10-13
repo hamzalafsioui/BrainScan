@@ -5,8 +5,8 @@ from pathlib import Path
 
 VALID_EXTENSIONS = ('.jpeg', '.jpg', '.bmp', '.png')
 
-def is_valid_image(filepath):
-    return filepath.lower().endwith(VALID_EXTENSIONS)
+def is_valid_image(file_path):
+    return file_path.lower().endswith(VALID_EXTENSIONS)
 
 def load_image_safe(file_path,target_size = (224,224)):
 
