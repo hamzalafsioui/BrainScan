@@ -22,3 +22,5 @@ ipykernel
 
 # Web Application
 streamlit
+
+pydot==2.0.0
