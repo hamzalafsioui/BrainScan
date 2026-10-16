@@ -1,0 +1,7 @@
+services:
+  streamlit:
+    build: .
+    container_name: brainscan-app
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
