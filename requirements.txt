@@ -1,5 +1,5 @@
 # Deep Learning
-tensorflow==2.13.0
+tensorflow==2.16.2
 keras==2.13.1
 
 # Image Processing
